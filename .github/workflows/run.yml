@@ -19,5 +19,8 @@ jobs:
         run: |
           pip install requests beautifulsoup4
 
+      - name: Create data directory
+        run: mkdir -p data
+
       - name: Run main program
         run: python src/main.py
